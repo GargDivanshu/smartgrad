@@ -16,6 +16,8 @@ module.exports = {
        "darkblue": "#17174A",
        "skyblue": "#368BFF",
        "lightskyblue": "#EDF5FF",
+       "linkedinblue": "#0072b1",
+       "redditorange": "#FF4300",
       },
     },
   },

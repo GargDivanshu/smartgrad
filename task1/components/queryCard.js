@@ -33,7 +33,7 @@ const QueryCard = () => {
         {/* <Image
             src=
         /> */}
-          <div className="rounded-full w-[45px] h-[45px] mx-12 bg-gray">
+          <div className="rounded-full w-[45px] h-[45px] mx-6 bg-gray">
           </div>
           <div className="flex flex-col">
             <h1 className="text-sm font-semibold text-darkblue">
