@@ -6,6 +6,7 @@ import QueryCard from './../components/queryCard';
 import Form from './../components/form';
 import Profile from './../components/profile';
 import QuesImg from './../components/quesImg';
+import Vote from './../components/vote';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -30,6 +31,8 @@ export default function Home() {
 
         {/* proofs folder */}
         <QuesImg/>
+
+        <Vote/>
       </main>
     </>
   )
