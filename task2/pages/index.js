@@ -102,6 +102,7 @@ export default function Home() {
        
           featureInfo.slice(featureArrow, featureArrow + 9).map((item) => (
         <Featured
+        key={item.title}
           title={item.title}
           featureNo={item.featureNo}
         />
@@ -136,6 +137,7 @@ export default function Home() {
        
        app.slice(popularArrow, popularArrow + 9).map((item) => (
      <PopularCard
+     key={item.name}
        logo={item.logo} title={item.name} desc={item.desc}
      />
    ))
@@ -152,7 +154,9 @@ export default function Home() {
           className={`my-auto absolute top-2 ${(showCategory === 0) ? 'opacity-0' : 'opacity-100'}`}
         />
        {category.slice(showCategory, showCategory + 7).map((item) => (
-        <div className="rounded-md p-3 py-2 text-[14px] max-w-fit mx-1 hover:bg-[#111827] hover:text-white bg-lightgray">
+        <div 
+        key={item.title}
+        className="rounded-md p-3 py-2 text-[14px] max-w-fit mx-1 hover:bg-[#111827] hover:text-white bg-lightgray">
           {item.title}
          </div>
        ))
@@ -167,7 +171,9 @@ export default function Home() {
         <div className="grid grid-cols-4 mx-auto w-11/12">
             {
               app.map((item) => (
-              <AppCard logo={item.logo} title={item.name} desc={item.desc} />
+              <AppCard 
+              key={item.name}
+              logo={item.logo} title={item.name} desc={item.desc} />
             ))
             }
         </div>
