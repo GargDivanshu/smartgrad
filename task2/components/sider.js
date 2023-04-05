@@ -22,6 +22,7 @@ const Sider = () => {
       {
         button.map((item) => (
           <Button
+          key={item.title}
             logo={item.logo}
             title={item.title}
           />
