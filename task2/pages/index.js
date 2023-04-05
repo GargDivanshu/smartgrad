@@ -11,6 +11,7 @@ import { featureInfo } from './../utils/feature';
 import PopularCard from './../components/popularCard';
 import{AiOutlineArrowLeft, AiOutlineArrowRight} from 'react-icons/ai'
 import { category } from './../utils/categories';
+import Sider from './../components/sider';
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -65,8 +66,19 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="bg-white px-auto max-h-fit min-h-screen">
-      <div className="flex justify-between w-11/12 mx-auto py-10">
+      <main className="bg-white px-auto max-h-fit min-h-screen flex">
+     
+     {/* <div className="">
+
+     </div> */}
+      <div className="w-[230px] h-screen min-h-fit bg-red">
+         <Sider/>
+      </div>
+
+      <div className="max-w-[950px]">
+
+      
+      <div className="flex justify-between w-11/12 max-w-[1200px] mx-auto py-10">
         <div className="flex flex-col">
           <div className="text-[20px] font-bold">
              App Store
@@ -176,6 +188,7 @@ export default function Home() {
               logo={item.logo} title={item.name} desc={item.desc} />
             ))
             }
+        </div>
         </div>
       </main>
     </>

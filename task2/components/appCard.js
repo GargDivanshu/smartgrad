@@ -19,7 +19,7 @@ const AppCard = ({logo, title, desc}) => {
             {title}
       </h1>
       <h1
-      className="h-[63px] px-5 mx-auto text-[14px] py-2 text-darkgray"
+      className="h-[71px] px-5 mx-auto text-[14px] py-2 text-darkgray"
       >
         {truncateString(desc, 90)}
       </h1>
