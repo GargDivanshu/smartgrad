@@ -23,7 +23,7 @@ const AppCard = ({logo, name, text, width, height, padding}) => {
 
   return (
     <div
-    className={`min-w-[${width}] p-[${padding}] min-h-[${height}] rounded-md border-lightgrayBg border-[1px]`}
+    className={`min-w-[${width}] p-[20px] min-h-[${height}] rounded-md border-lightgrayBg border-[1px]`}
     key={name}
     >
         <img 
