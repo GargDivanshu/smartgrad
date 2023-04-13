@@ -20,10 +20,10 @@ const Calendars = () => {
 <div className="flex justify-between border-b-[1px] border-lightgray">
     <div className="">
      <h1
-     className="w-full justify-start text-[18px] text-darkblue font-bold"
+     className="w-full justify-start text-[17px] text-darkblue font-bold"
      >Calendars</h1>
      <h1
-     className="text-[15px] text-btntextgray pb-[25px] "
+     className="text-[14px] text-btntextgray pb-[25px] "
      >
      Configure how your event types interact with your calendars
      </h1>
@@ -49,7 +49,7 @@ const Calendars = () => {
         />
        </div>
 
-       <h1 className="text-[19px] text-[#111827] font-bold text-center mt-[22px] mb-[16px]">
+       <h1 className="text-[18px] text-[#111827] font-bold text-center mt-[22px] mb-[16px]">
        No calendar installed
        </h1>
 

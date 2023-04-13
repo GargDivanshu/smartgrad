@@ -4,7 +4,7 @@ import Profilesider from './../../../components/Profilesider';
 import Button from './../../../components/common/Button';
 import Input from './../../../components/common/Input';
 import {AiOutlineDelete} from 'react-icons/ai'
-
+import MenuBar from './../../../components/common/MenuBar';
 
 
 const Profile = () => {
@@ -68,6 +68,14 @@ const Profile = () => {
      className="text-btntextgray"
      >You may need to log out and back in to see any change take effect</h1>
     
+
+    <h1 className="mt-[30px] mb-[10px]">
+      About
+    </h1>
+
+    <MenuBar/>
+
+
     <div 
     className=" border-b-[1px] border-lightgray"
     >

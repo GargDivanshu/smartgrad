@@ -22,10 +22,10 @@ const Appearence = () => {
     className="w-full max-w-[995px] ml-[227px] px-[135px] pt-[100px] pb-[32px]"
     >
      <h1
-     className="w-full justify-start text-[18px] text-darkblue font-bold"
+     className="w-full justify-start text-[17px] text-darkblue font-bold"
      >Appearence</h1>
      <h1
-     className="text-[15px] text-btntextgray pb-[25px] border-b-[1px] border-lightgray"
+     className="text-[14px] text-btntextgray pb-[25px] border-b-[1px] border-lightgray"
      >
      Manage settings for your language and timezone
      </h1>
@@ -34,7 +34,7 @@ const Appearence = () => {
 
     <div className="w-full my-[31px] p-[16px] border-b-[1px] border-lightgray pb-[30px] ">
       
-      <h1 className="text-[15px] text-[#374151] font-semibold">
+      <h1 className="text-[14px] text-[#374151] font-semibold">
       Theme
       </h1>
 
@@ -90,7 +90,7 @@ Light
 
     <div className="w-full my-[31px] p-[16px] border-b-[1px] border-lightgray pb-[30px] ">
       
-      <h1 className="text-[15px] text-[#374151] font-semibold">
+      <h1 className="text-[14px] text-[#374151] font-semibold">
       Custom brand colors
       </h1>
 
@@ -101,7 +101,7 @@ Light
 
       <div className="flex justify-between mt-[35px]">
            <div>
-              <h1 className="text-[15px] text-[#374151] mb-[12px]">
+              <h1 className="text-[14px] text-[#374151] mb-[12px]">
               Brand Color (Light Theme)
               </h1>
 
@@ -123,7 +123,7 @@ Light
            </div>
 
            <div>
-           <h1 className="text-[15px] text-[#374151] mb-[12px]">
+           <h1 className="text-[14px] text-[#374151] mb-[12px]">
            Brand Color (Dark Theme)
               </h1>
 
@@ -148,11 +148,11 @@ Light
       <div className="flex justify-between">
         <div className="">
         <div className="flex">  
-          <h1 className="text-[15px] text-[#374151] font-semibold">
+          <h1 className="text-[14px] text-[#374151] font-semibold">
           Disable Cal.com branding
           </h1>
 
-          <div className="bg-[#F3F4F6] text-[12px] text-center rounded-md px-1 py-[0.5px] pt-[0.5px] mx-[10px]">
+          <div className="bg-[#F3F4F6] text-[11px] text-center rounded-md px-1 py-[0.5px] pt-[0.5px] mx-[10px]">
           Upgrade
           </div>
         </div>

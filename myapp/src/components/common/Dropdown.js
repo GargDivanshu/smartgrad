@@ -18,7 +18,11 @@ name="cars" id="cars">
   options.map((item) => (
     <option 
     className="p-[8px] hover:bg-lightgrayBg"
-    value={item}>{item}</option>
+    value={item}>
+    <span
+    className="my-2"
+    >{item}</span>
+    </option>
   ))
 }
   {/* <option value="volvo">Volvo</option>

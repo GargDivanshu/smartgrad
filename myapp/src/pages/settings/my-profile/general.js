@@ -9,13 +9,31 @@ import Dropdown from './../../../components/common/Dropdown';
 
 
 const General = () => {
+
+  let subtitle;
+  const [modalIsOpen, setIsOpen] = React.useState(false);
+
+  function openModal() {
+    setIsOpen(true);
+  }
+
+  function afterOpenModal() {
+    // references are now sync'd and can be accessed.
+    subtitle.style.color = '#f00';
+  }
+
+  function closeModal() {
+    setIsOpen(false);
+  }
+
+  
   return (
     <main className="min-h-screen flex bg-white w-full">
     
     <Profilesider/>
 
     <div
-    className="w-full max-w-[995px] ml-[227px] px-[135px] pt-[100px] pb-[32px]"
+    className="w-full mx-auto max-w-[995px] ml-[227px] px-[135px] pt-[100px] pb-[32px]"
     >
      <h1
      className="w-full justify-start text-[18px] text-darkblue font-bold"
