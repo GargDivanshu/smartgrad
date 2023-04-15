@@ -18,7 +18,7 @@ const Sider = () => {
           fontSize={25}
          />
       </div>
-<div>
+<div className="px-auto">
       {
         button.map((item) => (
           <Button

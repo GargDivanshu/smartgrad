@@ -1,7 +1,7 @@
 import React from 'react'
 import Button from './../common/Button';
 import InstallBtn from './../common/InstallBtn';
-import Details from './../common/Details';
+import TextBtn from './../common/TextBtn';
 import { app } from './../../utils/app';
 import { useRouter } from 'next/router'
 
@@ -44,7 +44,7 @@ const AppCard = ({logo, name, text, width, height, padding}) => {
         </h1>
 
         <div className="flex">
-           <Details/>
+           <TextBtn/>
 
            <InstallBtn/>
         </div>

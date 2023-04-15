@@ -19,4 +19,4 @@ const Featured = ({title, featureNo}) => {
   )
 }
 
-export default Featured
+export default Featured  

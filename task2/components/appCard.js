@@ -24,7 +24,7 @@ const AppCard = ({logo, title, desc}) => {
         {truncateString(desc, 90)}
       </h1>
       <button className="p-2 border-[1px] hover:border-black border-gray rounded-md w-4/5 block mt-6 m-auto text-center text-[14px]"> 
-          Details
+          TextBtn
       </button>
     </div>
   )

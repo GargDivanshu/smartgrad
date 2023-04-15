@@ -3,8 +3,9 @@
 export const siderBtn = [
     {
         icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZjnh7TVGKVqsl3auAD1By2sQrrZrc1nUP2Q&usqp=CAU", 
-        text: "Event Types",
-        href: "settings/my-profile/profile"
+        text: "Companies",
+        href: "/companies"
+        // teenfounders -> web2 -> components -> TableComp.jsx
     },
     {
         icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZjnh7TVGKVqsl3auAD1By2sQrrZrc1nUP2Q&usqp=CAU", 

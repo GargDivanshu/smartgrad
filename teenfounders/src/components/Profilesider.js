@@ -46,7 +46,7 @@ const Profilesider = () => {
      onClick={() => {
       router.push("/settings/my-profile/profile")
     }}
-     className="flex px-[11px] text-[13px] pt-[4px] justify-start h-[32px] w-[158px] mx-auto focus:bg-[#E5E7EB] hover:bg-lightgrayBg rounded-md my-1">
+     className={`flex px-[11px] text-[13px] pt-[4px] justify-start h-[32px] w-[158px] mx-auto  hover:bg-lightgrayBg rounded-md my-1 ${(router.pathname==="/settings/my-profile/profile") ? "bg-[#E5E7EB]" : ""}`}>
       Profile
     </button>
 
@@ -54,7 +54,7 @@ const Profilesider = () => {
      onClick={() => {
       router.push("/settings/my-profile/general")
     }}
-    className="flex px-[11px] text-[13px] pt-[4px] justify-start h-[32px] w-[158px] mx-auto focus:bg-[#E5E7EB] hover:bg-lightgrayBg rounded-md my-1">
+    className={`flex px-[11px] text-[13px] pt-[4px] justify-start h-[32px] w-[158px] mx-auto  hover:bg-lightgrayBg rounded-md my-1 ${(router.pathname==="/settings/my-profile/general") ? "bg-[#E5E7EB]" : ""}`}>
       General
     </button>
 
@@ -62,7 +62,7 @@ const Profilesider = () => {
      onClick={() => {
       router.push("/settings/my-profile/calendars")
     }}
-    className="flex px-[11px] text-[13px] pt-[4px] justify-start h-[32px] w-[158px] mx-auto focus:bg-[#E5E7EB] hover:bg-lightgrayBg rounded-md my-1">
+    className={`flex px-[11px] text-[13px] pt-[4px] justify-start h-[32px] w-[158px] mx-auto  hover:bg-lightgrayBg rounded-md my-1 ${(router.pathname==="/settings/my-profile/calendars") ? "bg-[#E5E7EB]" : ""}`}>
       Calendars
     </button>
 
@@ -70,7 +70,7 @@ const Profilesider = () => {
      onClick={() => {
       router.push("/settings/my-profile/conferencing")
     }}
-    className="flex px-[11px] text-[13px] pt-[4px] justify-start h-[32px] w-[158px] mx-auto focus:bg-[#E5E7EB] hover:bg-lightgrayBg rounded-md my-1">
+    className={`flex px-[11px] text-[13px] pt-[4px] justify-start h-[32px] w-[158px] mx-auto  hover:bg-lightgrayBg rounded-md my-1 ${(router.pathname==="/settings/my-profile/conferencing") ? "bg-[#E5E7EB]" : ""}`}>
       Conferencing
     </button>
 
@@ -78,7 +78,7 @@ const Profilesider = () => {
      onClick={() => {
       router.push("/settings/my-profile/appearance")
     }}
-    className="flex px-[11px] text-[13px] pt-[4px] justify-start h-[32px] w-[158px] mx-auto focus:bg-[#E5E7EB] hover:bg-lightgrayBg rounded-md my-1">
+    className={`flex px-[11px] text-[13px] pt-[4px] justify-start h-[32px] w-[158px] mx-auto  hover:bg-lightgrayBg rounded-md my-1 ${(router.pathname==="/settings/my-profile/appearance") ? "bg-[#E5E7EB]" : ""}`}>
       Appearence
     </button>
 
@@ -94,7 +94,7 @@ const Profilesider = () => {
      >Security</span>
     </div>
 
-    <button className="flex px-[11px] text-[13px] pt-[4px] justify-start h-[32px] w-[158px] mx-auto focus:bg-[#E5E7EB] hover:bg-lightgrayBg rounded-md my-1">
+    <button className={`flex px-[11px] text-[13px] pt-[4px] justify-start h-[32px] w-[158px] mx-auto  hover:bg-lightgrayBg rounded-md my-1 ${(router.pathname==="/settings/my-profile/password") ? "bg-[#E5E7EB]" : ""}`}>
       Password
     </button>
 

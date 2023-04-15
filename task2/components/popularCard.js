@@ -15,7 +15,7 @@ const PopularCard = ({logo, title, desc}) => {
           {desc}
         </h1>
         <button className="p-2 hover:border-black border-[1px] border-gray rounded-md w-11/12 block mt-6 m-auto text-center text-[14px]"> 
-            Details
+            TextBtn
         </button>
       </div>
       )
