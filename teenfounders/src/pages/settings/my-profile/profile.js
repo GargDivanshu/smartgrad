@@ -72,9 +72,11 @@ const Profile = () => {
     <h1 className="mt-[30px] mb-[10px]">
       About
     </h1>
-
-    <MenuBar/>
-
+    <div className="h-96px ">
+    <MenuBar
+      placeholder="Tell us a little about yourself"
+    />
+</div>
 
     <div 
     className=" border-b-[1px] border-lightgray"

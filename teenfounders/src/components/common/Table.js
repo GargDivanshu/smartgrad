@@ -1,5 +1,14 @@
 import React from "react";
 const TableComp = () => {
+
+  function truncateString(str, num) {
+    if (str.length <= num) {
+      return str
+    }
+    return str.slice(0, num) + '...'
+  }
+
+
   const data = [
     {
       "": "CARS24",
@@ -102,22 +111,25 @@ const TableComp = () => {
       __2: "1-3 yrs",
     },
   ];
+
+
+
   return (
     <div className="bg-white">
       <table className="w-full font-inter border-[2px] border-[#EBEBEC]">
         <thead>
           <tr className="text-left font-semibold text-[.8125rem] text-[#181A1B] border-y border-[#EBEBEC] ">
-            <td className="w-30 py-1.5 px-2 border-r last:border-r-0">
+            <td className="w-1/5 py-1.5 px-2 border-r last:border-r-0">
               Contact
             </td>
-            <td className="w-40 py-1.5 px-2 border-r last:border-r-0">Url</td>
-            <td className="w-40 py-1.5 px-2 border-r last:border-r-0">
+            <td className="w-1/5 py-1.5 px-2 border-r last:border-r-0">Url</td>
+            <td className="w-1/5 py-1.5 px-2 border-r last:border-r-0">
               Contact
             </td>
-            <td className="w-40 py-1.5 px-2 border-r last:border-r-0">
+            <td className="w-1/5 py-1.5 px-2 border-r last:border-r-0">
               Something
             </td>
-            <td className="w-40 py-1.5 px-2 border-r last:border-r-0">
+            <td className="w-1/5 py-1.5 px-2 border-r last:border-r-0">
               Something
             </td>
           </tr>
@@ -129,24 +141,24 @@ const TableComp = () => {
           {data.map((currElem, index) => {
             return (
               <tr>
-                <td className="px-2 h-[50px] border-b border-[#EBEBEC] border-r w-40 last:border-r-0 flex items-center box-content cursor-pointer">
+                <td className="px-2 h-[50px] border-b border-[#EBEBEC] border-r  last:border-r-0 flex items-center box-content cursor-pointer">
                   {/* <span className="w-4 h-4 border mr-2 flex items-center justify-center text-[.5625rem] rounded-[4px] border-[#c2c3c4] font-semibold ">
                     {currElem[""].charAt(0)}
                   </span> */}
-                  {currElem[""]}
+                  {truncateString(currElem[""], 12)}
                 </td>
-                <td className="px-2 h-[50px] border-b border-[#EBEBEC] border-r w-60 last:border-r-0 cursor-pointer">
-                  {currElem["__1"]}
+                <td className="px-2 h-[50px] border-b border-[#EBEBEC] border-r w-1/5 last:border-r-0 cursor-pointer">
+                  {truncateString(currElem["__1"], 12)}
                 </td>
-                <td className="px-2  h-[50px] border-b border-[#EBEBEC] border-r w-50 last:border-r-0 cursor-pointer">
-                  {currElem["__2"]}
+                <td className="px-2  h-[50px] border-b border-[#EBEBEC] border-r w-1/5 last:border-r-0 cursor-pointer">
+                  {truncateString(currElem["__2"], 12)}
                 </td>
 
-                <td className="px-2 h-[50px] border-b border-[#EBEBEC] border-r w-80 last:border-r-0 cursor-pointer">
-                  {currElem["__1"]}
+                <td className="px-2 h-[50px] border-b border-[#EBEBEC] border-r w-1/5 last:border-r-0 cursor-pointer">
+                  {truncateString(currElem["__1"], 12)}
                 </td>
-                <td className="px-2  h-[50px] border-b border-[#EBEBEC] border-r w-50 last:border-r-0 cursor-pointer">
-                  {currElem["__2"]}
+                <td className="px-2  h-[50px] border-b border-[#EBEBEC] border-r w-1/5 last:border-r-0 cursor-pointer">
+                  {truncateString(currElem["__2"], 12)}
                 </td>
 
 

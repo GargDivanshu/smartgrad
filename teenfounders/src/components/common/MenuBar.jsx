@@ -9,6 +9,8 @@ import React from 'react'
 import {BiBold, BiUndo, BiRedo} from 'react-icons/bi'
 import {FiItalic} from 'react-icons/fi'
 import {GrStrikeThrough} from 'react-icons/gr'
+
+
 const MenuBar = ({ editor }) => {
   if (!editor) {
     return null
@@ -56,105 +58,7 @@ const MenuBar = ({ editor }) => {
       >
         <GrStrikeThrough/>
       </button>
-      {/* <button
-        onClick={() => editor.chain().focus().toggleCode().run()}
-        disabled={
-          !editor.can()
-            .chain()
-            .focus()
-            .toggleCode()
-            .run()
-        }
-        className={`border-[1px] rounded-md border-lightgray p-1 m-1 hover:bg-black hover:text-white ${editor.isActive('code') ? 'is-active' : ''}`}
-      >
-        code
-      </button> */}
-      {/* <button 
-      className="border-[1px] rounded-md border-lightgray p-1 m-1 hover:bg-black hover:text-white"
-      onClick={() => editor.chain().focus().unsetAllMarks().run()}>
-        clear marks
-      </button> */}
-      {/* <button 
-      className="border-[1px] rounded-md border-lightgray p-1 m-1 hover:bg-black hover:text-white"
-      onClick={() => editor.chain().focus().clearNodes().run()}>
-        clear nodes
-      </button> */}
-      {/* <button
-        onClick={() => editor.chain().focus().setParagraph().run()}
-        className={`border-[1px] rounded-md border-lightgray p-1 m-1 hover:bg-black hover:text-white ${editor.isActive('paragraph') ? 'is-active' : ''}`}
-      >
-        paragraph
-      </button> */}
-      {/* <button
-        onClick={() => editor.chain().focus().toggleHeading({ level: 1 }).run()}
-        className={`border-[1px] rounded-md border-lightgray p-1 m-1 hover:bg-black hover:text-white ${editor.isActive('heading', { level: 1 }) ? 'is-active' : ''}`}
-      >
-        h1
-      </button>
-      <button
-        onClick={() => editor.chain().focus().toggleHeading({ level: 2 }).run()}
-        className={`border-[1px] rounded-md border-lightgray p-1 m-1 hover:bg-black hover:text-white ${editor.isActive('heading', { level: 2 }) ? 'is-active' : ''}`}
-      >
-        h2
-      </button> */}
-      {/* <button
-        onClick={() => editor.chain().focus().toggleHeading({ level: 3 }).run()}
-        className={`border-[1px] rounded-md border-lightgray p-1 m-1 hover:bg-black hover:text-white ${editor.isActive('heading', { level: 3 }) ? 'is-active' : ''}`}
-      >
-        h3
-      </button>
-      <button
-        onClick={() => editor.chain().focus().toggleHeading({ level: 4 }).run()}
-        className={`border-[1px] rounded-md border-lightgray p-1 m-1 hover:bg-black hover:text-white ${editor.isActive('heading', { level: 4 }) ? 'is-active' : ''}`}
-      >
-        h4
-      </button> */}
-      {/* <button
-        onClick={() => editor.chain().focus().toggleHeading({ level: 5 }).run()}
-        className={`border-[1px] rounded-md border-lightgray p-1 m-1 hover:bg-black hover:text-white ${editor.isActive('heading', { level: 5 }) ? 'is-active' : ''}`}
-      >
-        h5
-      </button>
-      <button
-        onClick={() => editor.chain().focus().toggleHeading({ level: 6 }).run()}
-        className={`border-[1px] rounded-md border-lightgray p-1 m-1 hover:bg-black hover:text-white ${editor.isActive('heading', { level: 6 }) ? 'is-active' : ''}`}
-      >
-        h6
-      </button> */}
-      {/* <button
-        onClick={() => editor.chain().focus().toggleBulletList().run()}
-        className={`border-[1px] rounded-md border-lightgray p-1 m-1 hover:bg-black hover:text-white ${editor.isActive('bulletList') ? 'is-active' : ''}`}
-      >
-        bullet list
-      </button>
-      <button
-        onClick={() => editor.chain().focus().toggleOrderedList().run()}
-        className={`border-[1px] rounded-md border-lightgray p-1 m-1 hover:bg-black hover:text-white ${editor.isActive('orderedList') ? 'is-active' : ''}`}
-      >
-        ordered list
-      </button> */}
-      {/* <button
-        onClick={() => editor.chain().focus().toggleCodeBlock().run()}
-        className={`border-[1px] rounded-md border-lightgray p-1 m-1 hover:bg-black hover:text-white ${editor.isActive('codeBlock') ? 'is-active' : ''}`}
-      >
-        code block
-      </button>
-      <button
-        onClick={() => editor.chain().focus().toggleBlockquote().run()}
-        className={`border-[1px] rounded-md border-lightgray p-1 m-1 hover:bg-black hover:text-white ${editor.isActive('blockquote') ? 'is-active' : ''}`}
-      >
-        blockquote
-      </button> */}
-      {/* <button 
-      className="border-[1px] rounded-md border-lightgray p-1 m-1 hover:bg-black hover:text-white"
-      onClick={() => editor.chain().focus().setHorizontalRule().run()}>
-        horizontal rule
-      </button> */}
-      {/* <button 
-      className="border-[1px] rounded-md border-lightgray p-1 m-1 hover:bg-black hover:text-white"
-      onClick={() => editor.chain().focus().setHardBreak().run()}>
-        hard break
-      </button> */}
+      
       <button
       className="border-[1px] rounded-md border-lightgray p-1 m-1 hover:bg-black hover:text-white"
         onClick={() => editor.chain().focus().undo().run()}
@@ -181,18 +85,18 @@ const MenuBar = ({ editor }) => {
       >
        <BiRedo/>
       </button>
-      {/* <button
-        onClick={() => editor.chain().focus().setColor('#958DF1').run()}
-        className={`border-[1px] rounded-md border-lightgray p-1 m-1 hover:bg-black hover:text-white ${editor.isActive('textStyle', { color: '#958DF1' }) ? 'is-active' : ''}`}
-      >
-        purple
-      </button> */}
+
     </>
   )
 }
 
-export default () => {
+export default ({placeholder}) => {
   const editor = useEditor({
+    editorProps: {
+      attributes: {
+        class: "overflow-none outline-none text-[0.875rem] font-[400] leading-[1.5rem] text-[#1F2937] placeholder-[#9CA3AF] overflow-x-auto overflow-y-auto",
+      }
+    },
     extensions: [
       Color.configure({ types: [TextStyle.name, ListItem.name] }),
       TextStyle.configure({ types: [ListItem.name] }),
@@ -208,17 +112,19 @@ export default () => {
       }),
     ],
     content: `
-      
+ 
+  <h1>${placeholder}</h1>
+
     `,
   })
 
   return (
-    <div className="border-[1px] rounded-md border-lightgray">
+    <div className="border-[1px] rounded-md border-lightgray h-full">
       <MenuBar 
       className="border-[1px]"
       editor={editor} />
       <EditorContent
-      className="p-2 focus:outline-none"
+      className="p-2 outline-none overflow-auto"
        editor={editor} />
     </div>
   )

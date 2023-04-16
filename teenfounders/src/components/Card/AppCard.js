@@ -32,13 +32,13 @@ const AppCard = ({logo, name, text, width, height, padding}) => {
         />
 
         <div
-        className="text-[17px]"
+        className="text-[16px] font-medium"
         >
             {name}
         </div>
 
         <h1
-        className="text-[15px] min-h-[62px] mt-[8px] mb-[20px] text-btntextgray"
+        className="text-[14px] min-h-[62px] mt-[8px] mb-[20px] text-btntextgray"
         >
         {truncateString(text, 60)}
         </h1>

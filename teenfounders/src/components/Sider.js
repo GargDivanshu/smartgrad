@@ -15,7 +15,7 @@ const Sider = ({children}) => {
   return (
     <>
     <div
-    className={`w-[225px] pt-[28px] bg-lightwhite overflow-x-hidden ${(router.pathname === "/") ? "overflow-y-scroll" : "overflow-y-auto no-scrollbar" } h-screen fixed`}
+    className={`w-[225px] pt-[28px] bg-lightwhite overflow-x-hidden overflow-y-auto no-scrollbar h-screen fixed`}
     >
     {children}
     </div>

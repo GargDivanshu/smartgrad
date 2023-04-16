@@ -9,13 +9,6 @@ import {FiKey} from 'react-icons/fi'
 import {SlEnvolopeLetter} from 'react-icons/sl'
 import {HiCode} from 'react-icons/hi'
 import {AiOutlineTeam} from 'react-icons/ai'
-import Select, { SelectChangeEvent } from '@mui/material/Select';
-import MenuItem from '@mui/material/MenuItem';
-import InputLabel from '@mui/material/InputLabel';
-import FormControl from '@mui/material/FormControl';
-import Box from '@mui/material/Box';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import Checkbox from '@mui/material/Checkbox';
 import { BiLeftArrowAlt } from 'react-icons/bi';
 import Dropdown from './../../components/common/Dropdown';
 
@@ -90,87 +83,19 @@ text="Funding"
 
 
 <div className="w-[92px] h-[37px] m-2">
-<Box sx={{ 
-    minWidth: 'fit-content',
-    height: '27px',
- }}>
-<FormControl fullWidth>
-<InputLabel id="demo-controlled-open-select-label">No. of E.</InputLabel>
-<Select
-        labelId="demo-select-small"
-        id="demo-select-small"
-        value="no. of e"
-        label="No. of E"
-        onChange={handleChange}
-        // onFocus="none"
-        // className="w-full"
-        sx={{ 
-    minWidth: 'fit-content',
-    height: '34px',
-    onNodeFocus: "none"
- }}
-      >
-          <MenuItem value="1-10">
-          <em>1-10</em>
-        </MenuItem>
-      
-        <MenuItem value="1-10">
-          <em>11-25</em>
-        </MenuItem>
+<Dropdown 
+  text={"No. of E"}
+  options={["1-10", "11-25", "26-50", "51-100", "100+"]}
+/>
 
-        <MenuItem value="1-10">
-          <em>26-50</em>
-        </MenuItem>
-
-        <MenuItem value="1-10">
-          <em>50-100</em>
-        </MenuItem>
-
-      </Select>
-      </FormControl>
-      </Box>
 </div>
 
 <div className="w-[92px] h-[37px] m-2">
-<Box sx={{ 
-    minWidth: 'fit-content',
-    height: '27px',
- }}>
-<FormControl fullWidth>
-<InputLabel id="demo-controlled-open-select-label">No. of M.</InputLabel>
-<Select
-        labelId="demo-select-small"
-        id="demo-select-small"
-        value="no. of M"
-        label="No. of M"
-        onChange={handleChange}
-       
-        // className="w-full"
-        sx={{ 
-    minWidth: 'fit-content',
-    height: '34px',
-    onNodeFocus: "none"
- }}
-      >
-          <MenuItem value="1-10">
-          <em>1-10</em>
-        </MenuItem>
-      
-        <MenuItem value="1-10">
-          <em>11-25</em>
-        </MenuItem>
+<Dropdown 
+  text="No. of M"
+  options={["1-10", "11-25", "26-50", "51-100", "100+"]}
+/>
 
-        <MenuItem value="1-10">
-          <em>26-50</em>
-        </MenuItem>
-
-        <MenuItem value="1-10">
-          <em>50-100</em>
-        </MenuItem>
-
-      </Select>
-      </FormControl>
-      </Box>
 </div>
 
 </div>
@@ -193,7 +118,13 @@ text="Tags"
 </div>
 
 <div className="flex">
-<FormControlLabel control={<Checkbox 
+
+<input 
+  type="checkbox"
+  className="w-4 h-4 my-auto"
+/>
+
+{/* <FormControlLabel control={<Checkbox 
   sx={{
  
     '&.Mui-checked': {
@@ -201,24 +132,33 @@ text="Tags"
     },
   }}
 defaultChecked />}  />
-<h1 className="text-[0.875rem] m-auto w-full text-center">label</h1> 
+<h1 className="text-[0.875rem] m-auto w-full text-center">label</h1>  */}
 </div>
 
 </div>
 
 <div className="flex">
-<div className="w-[320px] h-[340px] m-2">
-<textarea 
+<div className="w-[320px] h-[340px] max-h-[340px] m-2">
+{/* <textarea 
 placeholder="about company"
     className="text-[0.875rem] resize-none w-full h-full rounded-md border-[1px] border-lightgray p-2 focus:outline-none"
-/>
+/> */}
+
+  <MenuBar
+      placeholder="About Company"
+    />
+
 
 </div>
 
-<div className="w-[550px] h-[340px] m-2">
-<textarea 
+<div className="w-[550px] h-[340px] max-h-[340px] m-2">
+{/* <textarea 
 placeholder="description"
     className="text-[0.875rem] resize-none w-full h-full rounded-md border-[1px] border-lightgray p-2 focus:outline-none"
+/> */}
+
+<MenuBar 
+  placeholder="description"
 />
 
 </div>
