@@ -1,4 +1,4 @@
-import './../../styles/Menubar.module.scss'
+import './../../styles/MenuBar.module.scss'
 
 import { Color } from '@tiptap/extension-color'
 import ListItem from '@tiptap/extension-list-item'
