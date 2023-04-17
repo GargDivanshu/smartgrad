@@ -3,6 +3,7 @@ import Sider from './../../../components/Sider';
 import Profilesider from './../../../components/Profilesider';
 import Button from './../../../components/common/Button';
 import Input from './../../../components/common/Input';
+import LabelInput from './../../../components/common/LabelInput';
 import {AiOutlineDelete} from 'react-icons/ai'
 import MenuBar from './../../../components/common/MenuBar';
 
@@ -43,11 +44,9 @@ const Profile = () => {
 
 
      <div>
-    <h1 className="my-[10px]">
-      Username
-    </h1>
+
     <div className="flex">
-    <span className="w-[79px] h-[34px] rounded-l-md border-[1px] border-lightgray bg-[#f9fafb] text-center pt-1  text-[15px] text-[#94958F]">
+    <span className="w-[79px] h-[34px] rounded-l-md border-[1px] border-lightgray bg-[#f9fafb] text-center pt-1  text-[14px] text-[#94958F]">
     cal.com/
     </span>
    <input 
@@ -56,12 +55,12 @@ const Profile = () => {
    </div>
    </div>
 
-     <Input 
+     <LabelInput 
       text="Full name"
      />
 
 
-     <Input
+     <LabelInput
       text="Email"
      />
      <h1

@@ -15,7 +15,7 @@ const Profilesider = () => {
   
   return (
     <div
-    className="w-[225px] font-[525] pt-[28px] bg-lightwhite overflow-x-hidden overflow-y-auto no-scrollbar h-screen fixed"
+    className="w-[225px] font-medium pt-[28px] bg-lightwhite overflow-x-hidden overflow-y-auto no-scrollbar h-screen fixed"
     >
     <div>
 
