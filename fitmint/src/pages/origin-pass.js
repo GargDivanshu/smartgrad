@@ -255,7 +255,7 @@ Only 15,619 limited edition Origin Pass NFTs would be minted, which would soon b
              </div>   
                 {
                     (two) ? 
-                    <h1 className="text-[#515563] font-light py-[15px]">For each Sneaker NFT you hold, be it OG Basics or MG Glides, you'll get one Origin Pass NFT. For instance, you'll get 3 Origin Passes for 2 OGs & 1 MG.</h1> : null 
+                    <h1 className="text-[#515563] font-light py-[15px]">For each Sneaker NFT you hold, be it OG Basics or MG Glides, you will get one Origin Pass NFT. For instance, you will get 3 Origin Passes for 2 OGs & 1 MG.</h1> : null 
                     }
              </div>
 
@@ -282,7 +282,7 @@ Only 15,619 limited edition Origin Pass NFTs would be minted, which would soon b
                 <br/> <br/>
 
                 <div>
-                    <li>For each OG Sneaker NFT that you have exchanged for the Pass, you will get 2 Mystery Boxes. For each MG Sneaker NFT, you'll get 1 Mystery Box.</li>
+                    <li>For each OG Sneaker NFT that you have exchanged for the Pass, you will get 2 Mystery Boxes. For each MG Sneaker NFT, you will get 1 Mystery Box.</li>
 
                     <li className="my-[10px]"><span
                 className="text-black font-semibold"
@@ -312,7 +312,7 @@ Only 15,619 limited edition Origin Pass NFTs would be minted, which would soon b
                 className="text-black font-semibold"
                 >Level 0 Sneakers: </span>Rookie Asset MBs</li>
 
-                <li>These assets are currently masterpieces-in-progress and we'll airdrop them to you as soon as they are ready. Stay tuned for more details.</li>
+                <li>These assets are currently masterpieces-in-progress and we will airdrop them to you as soon as they are ready. Stay tuned for more details.</li>
 
 
                 </div>
@@ -361,7 +361,7 @@ Only 15,619 limited edition Origin Pass NFTs would be minted, which would soon b
              </div>   
                { 
                 (five) ? 
-                <h1 className="text-[#515563] font-light py-[15px]">Never! You'll get a lifetime free access of our premium app features with the Origin Pass.</h1>
+                <h1 className="text-[#515563] font-light py-[15px]">Never! You will get a lifetime free access of our premium app features with the Origin Pass.</h1>
                 : null
                 }
              </div>
