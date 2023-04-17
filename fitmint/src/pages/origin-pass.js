@@ -38,7 +38,7 @@ const Origin = () => {
         </button>
 
         <h1 className="text-slate-500 text-xs underline self-center mt-3 hover:opacity-90 cursor-pointer text-center">
-            What's an origin pass ?
+            What s an origin pass ?
         </h1>
         </div>
        </div>
@@ -51,11 +51,11 @@ const Origin = () => {
 
         <div className="flex justify-between mt-[40px]">
            <div className="w-[320px] text-[#64748b] font-light text-base">
-           In an ever-evolving crescendo of possibilities. One of these possibilities, on which we're working on, is to make the world fitter. Getting you closer to your future self - a healthier you. <br/><br/>
+           In an ever-evolving crescendo of possibilities. One of these possibilities, on which we re working on, is to make the world fitter. Getting you closer to your future self - a healthier you. <br/><br/>
 
 Get ready to embark on this new adventure with Fitmint 2.0, where you are empowered with an avatar, a version of yourself who is the hero of our new game. <br/><br/>
 
-Start as a Rookie and make the hero's journey to become the Greatest Of All Time (G.O.A.T.)! <br/><br/>
+Start as a Rookie and make the hero s journey to become the Greatest Of All Time (G.O.A.T.)! <br/><br/>
 
 But, as a new chapter begins, we also want to honour our ORIGINS. <br/><br/>
 
@@ -63,13 +63,13 @@ When we began our project, enthusiasts from all over the world came to join us o
            </div>
 
            <div className="w-[320px] text-[#64748b] font-light text-base">
-           Now, on our new adventure, we're making sure that you get exclusive access like no one else. And to get that access, for a lifetime, you'll be getting the Origin Pass NFT. <br/><br/>
+           Now, on our new adventure, we re making sure that you get exclusive access like no one else. And to get that access, for a lifetime, you ll be getting the Origin Pass NFT. <br/><br/>
 
-We'll be opening the doors to our power-packed premium features for free, just for our Origin Pass holders! Features for which every other Fitminter would have to purchase a monthly/annual subscription to experience. <br/><br/>
+We ll be opening the doors to our power-packed premium features for free, just for our Origin Pass holders! Features for which every other Fitminter would have to purchase a monthly/annual subscription to experience. <br/><br/>
 
 In addition to this, Origin Pass holders would also get access to UltraFIT 2.0 Contest, where they can win real cash prizes from a weekly prize pool of 2000+ USDC! <br/><br/>
 
-Only 15,619 limited edition Origin Pass NFTs would be minted, which would soon be tradable on the Marketplace, at a price of your choosing. And there's a lot more coming, stay tuned. <br/><br/>
+Only 15,619 limited edition Origin Pass NFTs would be minted, which would soon be tradable on the Marketplace, at a price of your choosing. And there s a lot more coming, stay tuned. <br/><br/>
            </div>
         </div>     
        </div>
@@ -86,7 +86,7 @@ Only 15,619 limited edition Origin Pass NFTs would be minted, which would soon b
             Origin Pass
             </div>
 
-            <h1 className="text-base font-normal my-[14px]">An NFT Pass so exclusive that it will naturally bring with it loads of exclusive benefits. Here's what you get:</h1>
+            <h1 className="text-base font-normal my-[14px]">An NFT Pass so exclusive that it will naturally bring with it loads of exclusive benefits. Here s what you get:</h1>
 
             <h1 className="my-[10px] font-semibold ">PERKS</h1>
 
@@ -107,7 +107,7 @@ Only 15,619 limited edition Origin Pass NFTs would be minted, which would soon b
 
             {
                 (sub) ? (
-                <h1>You'll unlock all premium-tier features for a lifetime on the app for free, for which every other Fitminter would have to purchase a monthly/annual subscription to experience</h1>) : null}
+                <h1>You ll unlock all premium-tier features for a lifetime on the app for free, for which every other Fitminter would have to purchase a monthly/annual subscription to experience</h1>) : null}
         </div>
     </div>
   )
