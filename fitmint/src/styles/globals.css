@@ -140,3 +140,37 @@ a {
   65%  { transform: translate(0, 5px); }
   to   { transform: translate(0, -0px); }    
 }
+
+.mySpin{
+  animation-name: spin;
+  animation-duration: 20000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+}
+
+@keyframes spin {
+  from {
+      transform:rotate(0deg);
+  }
+  to {
+      transform:rotate(360deg);
+  }
+}
+
+
+.waves {
+  height: 186px;
+  width: 700px;
+  position: relative;
+  /* top: -325px; */
+  background-repeat: repeat-x;
+  animation: animatedImage 120s linear infinite;
+  }
+body{
+overflow:hidden;
+}
+
+@keyframes animatedImage {
+  0% { left: 2000px;}
+ 100% { left: -2000px;}
+}

@@ -19,13 +19,26 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="w-screen bg-white min-h-screen ">
+      <div className="w-screen bg-white min-h-screen relative">
         
         <Navbar/>
         <Landing/>
         <Mobile/>
         <Download/>
         <Footer/>
+
+        <div className="flex shadow-lg bg-white fixed w-[258px] bottom-24 right-24 h-[112px] rounded-xl">
+           <div className="mx-2 ml-4 my-auto Intro justify-start">
+           Download the
+           fitmint app
+           </div>
+
+           <img 
+           className="m-2"
+            src="qr.svg"
+           />
+
+        </div>
 
       </div>
     </>
