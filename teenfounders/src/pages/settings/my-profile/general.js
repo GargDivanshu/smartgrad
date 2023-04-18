@@ -33,7 +33,7 @@ const General = () => {
     <Profilesider/>
 
     <div
-    className="w-full mx-auto max-w-[995px] ml-[227px] px-[135px] pt-[100px] pb-[32px]"
+    className="w-full mx-auto max-w-[995px] lg:pl-[227px] px-[135px] pt-[100px] pb-[32px]"
     >
      <h1
      className="w-full justify-start text-[18px] text-darkblue font-bold"

@@ -5,7 +5,7 @@ import React from 'react'
 const LabelInput = ({text}) => {
   return (
     <div>
-    <h1 className="my-[5px] text-[14px]">
+    <h1 className="my-[5px] text-[0.875rem]">
       {text}
     </h1>
    <input 

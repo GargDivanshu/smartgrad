@@ -19,7 +19,7 @@ const Appearence = () => {
     <Profilesider/>
 
     <div
-    className="w-full max-w-[995px] ml-[227px] px-[135px] pt-[100px] pb-[32px]"
+    className="w-full max-w-[995px] mx-auto lg:pl-[227px] px-[135px] pt-[100px] pb-[32px]"
     >
      <h1
      className="w-full justify-start text-[17px] text-darkblue font-bold"

@@ -14,7 +14,7 @@ const Calendars = () => {
     <Profilesider/>
 
     <div
-    className="w-full max-w-[995px] ml-[227px] px-[135px] pt-[80px] pb-[32px]"
+    className="w-full max-w-[995px] mx-auto lg:pl-[227px] px-[135px] pt-[80px] pb-[32px]"
     >
 
 <div className="flex justify-between border-b-[1px] border-lightgray">

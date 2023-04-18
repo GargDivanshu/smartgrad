@@ -15,7 +15,7 @@ const Profile = () => {
     <Profilesider/>
 
     <div
-    className="w-full max-w-[995px] ml-[227px] px-[135px] pt-[100px] pb-[32px]"
+    className="w-full max-w-[995px] mx-auto lg:pl-[227px] px-[135px] pt-[100px] pb-[32px]"
     >
      <h1
      className="w-full justify-start text-[18px] text-darkblue font-bold"
@@ -73,7 +73,7 @@ const Profile = () => {
     </h1>
     <div className="h-96px ">
     <MenuBar
-      placeholder="Tell us a little about yourself"
+      placeholder=" "
     />
 </div>
 
@@ -81,7 +81,7 @@ const Profile = () => {
     className=" border-b-[1px] border-lightgray"
     >
     <button
-    className="bg-[#eaeaea] text-[14px] hover:cursor-not-allowed text-[#9999] w-[81px] h-[35px] rounded-md my-[23px]" 
+    className="bg-[#eaeaea]  text-[0.875rem] hover:cursor-not-allowed text-[#9999] w-[81px] h-[35px] rounded-md my-[23px]" 
     disabled
     >
       Update
@@ -90,10 +90,10 @@ const Profile = () => {
 
     <div>
       <h1
-      className="text-[14px] font-semibold pt-[28px]"
+      className=" text-[0.875rem] font-semibold pt-[28px]"
       >Danger Zone</h1>
 
-     <button className="py-[6px] px-[8px] mt-[15px] rounded-md flex border-[1px] border-lightgray border-md">
+     <button className="py-[6px] text-[0.875rem] px-[8px] mt-[15px] rounded-md flex border-[1px] border-lightgray border-md">
       <AiOutlineDelete
         className="my-auto mr-2"
       />
