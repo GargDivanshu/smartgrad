@@ -28,7 +28,7 @@ const Mainscreen = () => {
 
   return (
     <div
-    className="w-full max-w-[1000px] ml-[227px] px-[48px] pt-[40px]"
+    className="w-full max-w-[1000px] ml-[227px] mx-auto px-[48px] pt-[40px]"
     >
 
         <div className="flex justify-between">

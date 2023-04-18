@@ -64,11 +64,11 @@ const Profile = () => {
       text="Email"
      />
      <h1
-     className="text-btntextgray"
+     className="text-btntextgray text-[0.875rem]"
      >You may need to log out and back in to see any change take effect</h1>
     
 
-    <h1 className="mt-[30px] mb-[10px]">
+    <h1 className="mt-[30px] text-[0.875rem] mb-[10px]">
       About
     </h1>
     <div className="h-96px ">
@@ -81,7 +81,7 @@ const Profile = () => {
     className=" border-b-[1px] border-lightgray"
     >
     <button
-    className="bg-[#eaeaea] hover:cursor-not-allowed text-[#9999] w-[81px] h-[35px] rounded-md my-[23px]" 
+    className="bg-[#eaeaea] text-[14px] hover:cursor-not-allowed text-[#9999] w-[81px] h-[35px] rounded-md my-[23px]" 
     disabled
     >
       Update

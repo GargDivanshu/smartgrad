@@ -172,7 +172,7 @@ Light
       </div>
 
       <button
-    className="bg-[#eaeaea] hover:cursor-not-allowed text-[#9999] w-[81px] h-[35px] rounded-md my-[23px]" 
+    className="bg-[#eaeaea] text-[14px] hover:cursor-not-allowed text-[#9999] w-[81px] h-[35px] rounded-md my-[23px]" 
     disabled
     >
       Update

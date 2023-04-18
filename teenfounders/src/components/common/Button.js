@@ -12,7 +12,7 @@ const Button = ({icon, text, link}) => {
     href={link}
     >
     <button 
-    className="w-[177px] mx-auto hover:bg-lightgrayBg text-[14px] focus:bg-[#E5E7EB] flex h-[36px] rounded-md my[1px]"
+    className="w-[177px] my-1 mx-auto hover:bg-lightgrayBg text-[14px] focus:bg-[#E5E7EB] flex h-[36px] rounded-md my[1px]"
     >
       <img src={icon} 
         className="w-[25px] my-auto h-[25px] p-1"
