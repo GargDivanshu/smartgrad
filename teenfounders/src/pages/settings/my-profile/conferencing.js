@@ -36,13 +36,13 @@ const Conferencing = () => {
 
       <div className="mx-[10px]">
          <div className="flex ">
-            <h1>Cal Video</h1>
+            <h1 className="text-[0.875rem] font-[600]">Cal Video</h1>
             <div className="bg-[#E2FBE8] text-[#285231] rounded-md mx-[8px] text-[12px] px-[4px] py-[1px] pt-1 text-center">
                 Default
             </div>
          </div>
 
-         <h1 className="text-[14px] text-[#6B7280] ">
+         <h1 className="text-sm text-[#6B7280] ">
          Cal Video is the in-house web-based video conferencing platform powered by Daily.co, which ...
          </h1>
 

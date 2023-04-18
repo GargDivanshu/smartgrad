@@ -46,7 +46,7 @@ const Profilesider = () => {
      onClick={() => {
       router.push("/settings/my-profile/profile")
     }}
-     className={`flex px-[11px] text-[0.875rem] pt-[4px] justify-start h-[32px] w-[158px] mx-auto  hover:bg-lightgrayBg rounded-md my-1 ${(router.pathname==="/settings/my-profile/profile") ? "bg-[#E5E7EB]" : ""}`}>
+     className={`font-[500] flex px-[11px] text-[0.875rem] pt-[4px] justify-start h-[32px] w-[158px] mx-auto  hover:bg-lightgrayBg rounded-md my-1 ${(router.pathname==="/settings/my-profile/profile") ? "bg-[#E5E7EB]" : ""}`}>
       Profile
     </button>
 
@@ -54,7 +54,7 @@ const Profilesider = () => {
      onClick={() => {
       router.push("/settings/my-profile/general")
     }}
-    className={`flex px-[11px] text-[0.875rem] pt-[4px] justify-start h-[32px] w-[158px] mx-auto  hover:bg-lightgrayBg rounded-md my-1 ${(router.pathname==="/settings/my-profile/general") ? "bg-[#E5E7EB]" : ""}`}>
+    className={`font-[500] flex px-[11px] text-[0.875rem] pt-[4px] justify-start h-[32px] w-[158px] mx-auto  hover:bg-lightgrayBg rounded-md my-1 ${(router.pathname==="/settings/my-profile/general") ? "bg-[#E5E7EB]" : ""}`}>
       General
     </button>
 
@@ -62,7 +62,7 @@ const Profilesider = () => {
      onClick={() => {
       router.push("/settings/my-profile/calendars")
     }}
-    className={`flex px-[11px] text-[0.875rem] pt-[4px] justify-start h-[32px] w-[158px] mx-auto  hover:bg-lightgrayBg rounded-md my-1 ${(router.pathname==="/settings/my-profile/calendars") ? "bg-[#E5E7EB]" : ""}`}>
+    className={`font-[500] flex px-[11px] text-[0.875rem] pt-[4px] justify-start h-[32px] w-[158px] mx-auto  hover:bg-lightgrayBg rounded-md my-1 ${(router.pathname==="/settings/my-profile/calendars") ? "bg-[#E5E7EB]" : ""}`}>
       Calendars
     </button>
 
@@ -70,7 +70,7 @@ const Profilesider = () => {
      onClick={() => {
       router.push("/settings/my-profile/conferencing")
     }}
-    className={`flex px-[11px] text-[0.875rem] pt-[4px] justify-start h-[32px] w-[158px] mx-auto  hover:bg-lightgrayBg rounded-md my-1 ${(router.pathname==="/settings/my-profile/conferencing") ? "bg-[#E5E7EB]" : ""}`}>
+    className={`font-[500] flex px-[11px] text-[0.875rem] pt-[4px] justify-start h-[32px] w-[158px] mx-auto  hover:bg-lightgrayBg rounded-md my-1 ${(router.pathname==="/settings/my-profile/conferencing") ? "bg-[#E5E7EB]" : ""}`}>
       Conferencing
     </button>
 
@@ -78,7 +78,7 @@ const Profilesider = () => {
      onClick={() => {
       router.push("/settings/my-profile/appearance")
     }}
-    className={`flex px-[11px] text-[0.875rem] pt-[4px] justify-start h-[32px] w-[158px] mx-auto  hover:bg-lightgrayBg rounded-md my-1 ${(router.pathname==="/settings/my-profile/appearance") ? "bg-[#E5E7EB]" : ""}`}>
+    className={`font-[500] flex px-[11px] text-[0.875rem] pt-[4px] justify-start h-[32px] w-[158px] mx-auto  hover:bg-lightgrayBg rounded-md my-1 ${(router.pathname==="/settings/my-profile/appearance") ? "bg-[#E5E7EB]" : ""}`}>
       Appearence
     </button>
 
@@ -90,19 +90,19 @@ const Profilesider = () => {
       fontSize={15}
      />
      <span
-     className="my-auto mx-[10px] text-[#374151] text-[0.875rem]"
+     className=" my-auto mx-[10px] text-[#374151] text-[0.875rem]"
      >Security</span>
     </div>
 
-    <button className={`flex px-[11px] text-[0.875rem] pt-[4px] justify-start h-[32px] w-[158px] mx-auto  hover:bg-lightgrayBg rounded-md my-1 ${(router.pathname==="/settings/my-profile/password") ? "bg-[#E5E7EB]" : ""}`}>
+    <button className={`font-[500] flex px-[11px] text-[0.875rem] pt-[4px] justify-start h-[32px] w-[158px] mx-auto  hover:bg-lightgrayBg rounded-md my-1 ${(router.pathname==="/settings/my-profile/password") ? "bg-[#E5E7EB]" : ""}`}>
       Password
     </button>
 
-    <button className="flex px-[11px] text-[0.875rem] pt-[4px] justify-start h-[32px] w-[158px] mx-auto focus:bg-[#E5E7EB] hover:bg-lightgrayBg rounded-md my-1">
+    <button className="font-[500] flex px-[11px] text-[0.875rem] pt-[4px] justify-start h-[32px] w-[158px] mx-auto focus:bg-[#E5E7EB] hover:bg-lightgrayBg rounded-md my-1">
       Two factor Auth
     </button>
 
-    <button className="flex px-[11px] text-[0.875rem] pt-[4px] justify-start h-[32px] w-[158px] mx-auto focus:bg-[#E5E7EB] hover:bg-lightgrayBg rounded-md my-1">
+    <button className="font-[500] flex px-[11px] text-[0.875rem] pt-[4px] justify-start h-[32px] w-[158px] mx-auto focus:bg-[#E5E7EB] hover:bg-lightgrayBg rounded-md my-1">
       Impersonification
     </button>
 
@@ -119,7 +119,7 @@ const Profilesider = () => {
      >Billing</span>
     </div>
 
-    <button className="flex px-[11px] text-[0.875rem] pt-[4px] justify-start h-[32px] w-[158px] mx-auto focus:bg-[#E5E7EB] hover:bg-lightgrayBg rounded-md my-1">
+    <button className="font-[500] flex px-[11px] text-[0.875rem] pt-[4px] justify-start h-[32px] w-[158px] mx-auto focus:bg-[#E5E7EB] hover:bg-lightgrayBg rounded-md my-1">
       Manage Billing
     </button>
 
@@ -135,11 +135,11 @@ const Profilesider = () => {
      >Developer</span>
     </div>
 
-    <button className="flex px-[11px] text-[0.875rem] pt-[4px] justify-start h-[32px] w-[158px] mx-auto focus:bg-[#E5E7EB] hover:bg-lightgrayBg rounded-md my-1">
+    <button className="font-[500] flex px-[11px] text-[0.875rem] pt-[4px] justify-start h-[32px] w-[158px] mx-auto focus:bg-[#E5E7EB] hover:bg-lightgrayBg rounded-md my-1">
       Webhooks
     </button>
 
-    <button className="flex px-[11px] text-[0.875rem] pt-[4px] justify-start h-[32px] w-[158px] mx-auto focus:bg-[#E5E7EB] hover:bg-lightgrayBg rounded-md my-1">
+    <button className="font-[500] flex px-[11px] text-[0.875rem] pt-[4px] justify-start h-[32px] w-[158px] mx-auto focus:bg-[#E5E7EB] hover:bg-lightgrayBg rounded-md my-1">
       API Keys
     </button>
 
