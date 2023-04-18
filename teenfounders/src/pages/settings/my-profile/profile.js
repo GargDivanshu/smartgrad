@@ -18,10 +18,10 @@ const Profile = () => {
     className="w-full max-w-[995px] mx-auto lg:pl-[227px] px-[135px] pt-[100px] pb-[32px]"
     >
      <h1
-     className="w-full justify-start text-[18px] text-darkblue font-bold"
+     className="w-full justify-start text-[1.25rem] text-darkblue font-bold"
      >Profile</h1>
      <h1
-     className="text-[15px] text-btntextgray pb-[25px] border-b-[1px] border-lightgray"
+     className="text-[0.875rem] text-btntextgray pb-[25px] border-b-[1px] border-lightgray"
      >
      Manage settings for your Cal.com profile
      </h1>
@@ -35,7 +35,7 @@ const Profile = () => {
       {/* <Button/> */}
 
       <button 
-        className="w-[130px] h-[32px] rounded-md border-[1px] my-auto font-semibold mx-[16px] border-lightgray"
+        className="w-[130px] h-[32px] font-[500] rounded-md border-[1px] my-auto mx-[16px] text-[0.875rem] border-lightgray"
       
       >
       Change Avatar

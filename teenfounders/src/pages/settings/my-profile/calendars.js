@@ -20,7 +20,7 @@ const Calendars = () => {
 <div className="flex justify-between border-b-[1px] border-lightgray">
     <div className="">
      <h1
-     className="w-full justify-start text-[17px] text-darkblue font-bold"
+     className="w-full justify-start text-[1.25rem] text-darkblue font-bold"
      >Calendars</h1>
      <h1
      className="text-[14px] text-btntextgray pb-[25px] "

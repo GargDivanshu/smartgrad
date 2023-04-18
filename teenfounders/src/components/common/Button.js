@@ -19,7 +19,7 @@ const Button = ({icon, text, link}) => {
       /> 
         
 
-      <span className="text-btntextgray my-auto">{text}</span>
+      <span className="text-btntextgray font-[500] text-[0.875rem] my-auto">{text}</span>
     </button>
     </Link>
   )

@@ -36,10 +36,10 @@ const General = () => {
     className="w-full mx-auto max-w-[995px] lg:pl-[227px] px-[135px] pt-[100px] pb-[32px]"
     >
      <h1
-     className="w-full justify-start text-[18px] text-darkblue font-bold"
+     className="w-full justify-start text-[1.25rem] text-darkblue font-bold"
      >General</h1>
      <h1
-     className="text-[15px] text-btntextgray pb-[25px] border-b-[1px] border-lightgray"
+     className="text-[0.875rem] text-btntextgray pb-[25px] border-b-[1px] border-lightgray"
      >
      Manage settings for your language and timezone
      </h1>
@@ -47,7 +47,7 @@ const General = () => {
 
 
    
-
+     
      <Dropdown
       text="Language"
       options={["English", "Hindi", "Marathi"]}
