@@ -2,14 +2,16 @@ import './../../styles/MenuBar.module.scss'
 
 import { Color } from '@tiptap/extension-color'
 import ListItem from '@tiptap/extension-list-item'
+import BulletList from '@tiptap/extension-bullet-list'
 import TextStyle from '@tiptap/extension-text-style'
 import { EditorContent, useEditor } from '@tiptap/react'
 import StarterKit from '@tiptap/starter-kit'
 import React from 'react'
 import {BiBold, BiUndo, BiRedo} from 'react-icons/bi'
-import {FiItalic} from 'react-icons/fi'
+import {FiItalic, FiBold} from 'react-icons/fi'
 import {GrStrikeThrough} from 'react-icons/gr'
-
+import {MdFormatListBulleted} from 'react-icons/md'
+import {VscListOrdered} from 'react-icons/vsc'
 
 const MenuBar = ({ editor }) => {
   if (!editor) {
@@ -28,9 +30,11 @@ const MenuBar = ({ editor }) => {
             .toggleBold()
             .run()
         }
-        className={`border-[1px] rounded-md border-lightgray p-1 m-1 hover:bg-black hover:text-white ${editor.isActive('bold') ? 'is-active' : ''}`}
+        className={`rounded-md  p-2 m-1  hover:bg-[#F3F4F6] ${editor.isActive('bold') ? 'is-active' : ''}`}
       >
-       <BiBold/>
+       <FiBold
+       fontSize={20}
+       />
       </button>
       <button
         onClick={() => editor.chain().focus().toggleItalic().run()}
@@ -41,9 +45,11 @@ const MenuBar = ({ editor }) => {
             .toggleItalic()
             .run()
         }
-        className={`border-[1px] rounded-md border-lightgray p-1 m-1 hover:bg-black hover:text-white ${editor.isActive('italic') ? 'is-active' : ''}`}
+        className={`rounded-md  p-2 m-1  hover:bg-[#F3F4F6] ${editor.isActive('italic') ? 'is-active' : ''}`}
       >
-        <FiItalic/>
+        <FiItalic
+        fontSize={20}
+        />
       </button>
       <button
         onClick={() => editor.chain().focus().toggleStrike().run()}
@@ -54,13 +60,15 @@ const MenuBar = ({ editor }) => {
             .toggleStrike()
             .run()
         }
-        className={`border-[1px] rounded-md border-lightgray p-1 m-1 hover:bg-black hover:text-white ${editor.isActive('strike') ? 'is-active' : ''}`}
+        className={`rounded-md  p-2 m-1  hover:bg-[#F3F4F6] ${editor.isActive('strike') ? 'is-active' : ''}`}
       >
-        <GrStrikeThrough/>
+        <GrStrikeThrough
+        fontSize={20}
+        />
       </button>
       
       <button
-      className="border-[1px] rounded-md border-lightgray p-1 m-1 hover:bg-black hover:text-white"
+     className=" rounded-md  p-2 m-1  hover:bg-[#F3F4F6]"
         onClick={() => editor.chain().focus().undo().run()}
         disabled={
           !editor.can()
@@ -70,10 +78,12 @@ const MenuBar = ({ editor }) => {
             .run()
         }
       >
-        <BiUndo/>
+        <BiUndo
+        fontSize={20}
+        />
       </button>
       <button
-      className="border-[1px] rounded-md border-lightgray p-1 m-1 hover:bg-black hover:text-white"
+      className=" rounded-md  p-2 m-1  hover:bg-[#F3F4F6]"
         onClick={() => editor.chain().focus().redo().run()}
         disabled={
           !editor.can()
@@ -83,8 +93,28 @@ const MenuBar = ({ editor }) => {
             .run()
         }
       >
-       <BiRedo/>
+       <BiRedo
+       fontSize={20}
+       />
       </button>
+
+      <button
+        onClick={() => editor.chain().focus().toggleBulletList().run()}
+        className={` rounded-md  p-2 m-1  hover:bg-[#F3F4F6] ${editor.isActive('bulletList') ? 'is-active' : ''}`}
+      >
+        <MdFormatListBulleted
+       fontSize={20}
+       />
+      </button>
+      <button
+        onClick={() => editor.chain().focus().toggleOrderedList().run()}
+        className={` rounded-md  p-2 m-1  hover:bg-[#F3F4F6] ${editor.isActive('orderedList') ? 'is-active' : ''}`}
+      >
+        <VscListOrdered
+        fontSize={20}
+        />
+      </button>
+
 
     </>
   )
@@ -110,6 +140,11 @@ export default ({placeholder}) => {
           keepAttributes: false, // TODO : Making this as `false` becase marks are not preserved when I try to preserve attrs, awaiting a bit of help
         },
       }),
+      BulletList.configure({
+        HTMLAttributes: {
+          class: 'list-disc'
+        }
+      })
     ],
     content: `
  

@@ -211,13 +211,13 @@ Only 15,619 limited edition Origin Pass NFTs would be minted, which would soon b
 
 
         <div className="mt-[190px] w-[768px] max-w-[768px] mb-[125px] mx-auto">
-             <h1 className="Russo">FAQS</h1>
-
+             <h1 className="Intro text-[1.875rem]">FAQS</h1>
+{/* font-bold Russo */}
 
              {/* FAQ QUES ONE */}
              <div 
              onClick={() => setOne(!one)}
-             className="my-[30px] border-b-[1px] border-[#EDEDED]">
+             className="my-[30px] border-b-[1px] cursor-pointer border-[#EDEDED]">
              <div className="flex justify-between">
                 <h1 className="Intro text-xl py-[23px] ">What Is an Origin Pass NFT?</h1>
                 {
@@ -241,7 +241,7 @@ Only 15,619 limited edition Origin Pass NFTs would be minted, which would soon b
             {/* FAQ QUES TWO */}
              <div 
              onClick={() => setTwo(!two)}
-             className="my-[30px] border-b-[1px] border-[#EDEDED]">
+             className="my-[30px] border-b-[1px] cursor-pointer border-[#EDEDED]">
              <div className="flex justify-between">
                 <h1 className="Intro text-xl py-[23px] ">How many Sneakers do I need to claim one Origin Pass NFT?</h1>
                 {
@@ -263,7 +263,7 @@ Only 15,619 limited edition Origin Pass NFTs would be minted, which would soon b
              {/* FAQ QUES THREE */}
              <div 
              onClick={() => setThree(!three)}
-             className="my-[30px] border-b-[1px] border-[#EDEDED]">
+             className="my-[30px] border-b-[1px] cursor-pointer border-[#EDEDED]">
              <div className="flex justify-between">
                 <h1 className="Intro text-xl py-[23px] ">What is the benefit of converting my higher level Sneakers to Origin Pass NFT?</h1>
                 {
@@ -325,7 +325,7 @@ Only 15,619 limited edition Origin Pass NFTs would be minted, which would soon b
              {/* FAQ QUES FOUR */}
              <div 
              onClick={() => setFour(!four)}
-             className="my-[30px] border-b-[1px] border-[#EDEDED]">
+             className="my-[30px] border-b-[1px] cursor-pointer border-[#EDEDED]">
              <div className="flex justify-between">
                 <h1 className="Intro text-xl py-[23px] ">What will happen to my Sneakers?</h1>
                 {
@@ -347,7 +347,7 @@ Only 15,619 limited edition Origin Pass NFTs would be minted, which would soon b
              {/* FAQ QUES FIVE */}
              <div 
              onClick={() => setFive(!five)}
-             className="my-[30px] border-b-[1px] border-[#EDEDED]">
+             className="my-[30px] border-b-[1px] cursor-pointer border-[#EDEDED]">
              <div className="flex justify-between">
                 <h1 className="Intro text-xl py-[23px] ">When will my Origin Pass benefits end?</h1>
                 {
@@ -370,7 +370,7 @@ Only 15,619 limited edition Origin Pass NFTs would be minted, which would soon b
              {/* FAQ QUES SIX */}
              <div 
              onClick={() => setSix(!six)}
-             className="my-[30px] border-b-[1px] border-[#EDEDED]">
+             className="my-[30px] border-b-[1px] cursor-pointer border-[#EDEDED]">
              <div className="flex justify-between">
                 <h1 className="Intro text-xl py-[23px] ">Will Origin Pass be tradable?</h1>
                 {
@@ -393,7 +393,7 @@ Only 15,619 limited edition Origin Pass NFTs would be minted, which would soon b
              {/* FAQ QUES SEVEN */}
              <div 
              onClick={() => setSeven(!seven)}
-             className="my-[30px] border-b-[1px] border-[#EDEDED]">
+             className="my-[30px] border-b-[1px] cursor-pointer border-[#EDEDED]">
              <div className="flex justify-between">
                 <h1 className="Intro text-xl py-[23px] ">Will I be able to access Area 51 with Origin Pass?</h1>
                 {

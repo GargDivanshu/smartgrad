@@ -8,6 +8,11 @@ export const siderBtn = [
         // teenfounders -> web2 -> components -> TableComp.jsx
     },
     {
+        icon: "/link.svg",
+        text: "Event Types",
+        href: "/event-types"
+    },
+    {
         icon: "/bookings.svg", 
         text: "Bookings",
         href: "settings/my-profile/profile"

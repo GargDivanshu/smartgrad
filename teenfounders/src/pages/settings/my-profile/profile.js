@@ -15,7 +15,7 @@ const Profile = () => {
     <Profilesider/>
 
     <div
-    className="w-full max-w-[995px] mx-auto lg:pl-[227px] px-[135px] pt-[100px] pb-[32px]"
+    className="w-full max-w-[995px] mx-auto lg:pl-[227px] px-[135px] pt-[80px] pb-[32px]"
     >
      <h1
      className="w-full justify-start text-[1.25rem] text-darkblue font-bold"
@@ -45,6 +45,9 @@ const Profile = () => {
 
      <div>
 
+     <h1 className="my-[5px] text-[0.875rem] font-[500]">
+      Username
+    </h1>
     <div className="flex">
     <span className="w-[79px] h-[34px] rounded-l-md border-[1px] border-lightgray bg-[#f9fafb] text-center pt-1  text-[14px] text-[#94958F]">
     cal.com/
@@ -68,7 +71,7 @@ const Profile = () => {
      >You may need to log out and back in to see any change take effect</h1>
     
 
-    <h1 className="mt-[30px] text-[0.875rem] mb-[10px]">
+    <h1 className="mt-[30px] font-[500] text-[0.875rem] mb-[10px]">
       About
     </h1>
     <div className="h-96px ">

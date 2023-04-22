@@ -38,7 +38,7 @@ const Profilesider = () => {
       className="rounded-full w-[17px] h-[17px] ml-[14px] my-auto"
      />
      <span
-     className="my-auto mx-[10px] text-[#374151] text-[0.875rem]"
+     className="my-auto mx-[10px] leading-5 text-[#374151] text-[0.875rem]"
      >TeenFounders</span>
     </div>
 
@@ -46,7 +46,7 @@ const Profilesider = () => {
      onClick={() => {
       router.push("/settings/my-profile/profile")
     }}
-     className={`font-[500] flex px-[11px] text-[0.875rem] pt-[4px] justify-start h-[32px] w-[158px] mx-auto  hover:bg-lightgrayBg rounded-md my-1 ${(router.pathname==="/settings/my-profile/profile") ? "bg-[#E5E7EB]" : ""}`}>
+     className={`font-[500] leading-5 flex px-[11px] text-[0.875rem] pt-[4px] justify-start h-[32px] w-[158px] mx-auto  hover:bg-lightgrayBg rounded-md my-1 ${(router.pathname==="/settings/my-profile/profile") ? "bg-[#E5E7EB]" : ""}`}>
       Profile
     </button>
 
@@ -54,7 +54,7 @@ const Profilesider = () => {
      onClick={() => {
       router.push("/settings/my-profile/general")
     }}
-    className={`font-[500] flex px-[11px] text-[0.875rem] pt-[4px] justify-start h-[32px] w-[158px] mx-auto  hover:bg-lightgrayBg rounded-md my-1 ${(router.pathname==="/settings/my-profile/general") ? "bg-[#E5E7EB]" : ""}`}>
+    className={`font-[500] leading-5 flex px-[11px] text-[0.875rem] pt-[4px] justify-start h-[32px] w-[158px] mx-auto  hover:bg-lightgrayBg rounded-md my-1 ${(router.pathname==="/settings/my-profile/general") ? "bg-[#E5E7EB]" : ""}`}>
       General
     </button>
 
@@ -62,7 +62,7 @@ const Profilesider = () => {
      onClick={() => {
       router.push("/settings/my-profile/calendars")
     }}
-    className={`font-[500] flex px-[11px] text-[0.875rem] pt-[4px] justify-start h-[32px] w-[158px] mx-auto  hover:bg-lightgrayBg rounded-md my-1 ${(router.pathname==="/settings/my-profile/calendars") ? "bg-[#E5E7EB]" : ""}`}>
+    className={`font-[500] leading-5 flex px-[11px] text-[0.875rem] pt-[4px] justify-start h-[32px] w-[158px] mx-auto  hover:bg-lightgrayBg rounded-md my-1 ${(router.pathname==="/settings/my-profile/calendars") ? "bg-[#E5E7EB]" : ""}`}>
       Calendars
     </button>
 
@@ -70,7 +70,7 @@ const Profilesider = () => {
      onClick={() => {
       router.push("/settings/my-profile/conferencing")
     }}
-    className={`font-[500] flex px-[11px] text-[0.875rem] pt-[4px] justify-start h-[32px] w-[158px] mx-auto  hover:bg-lightgrayBg rounded-md my-1 ${(router.pathname==="/settings/my-profile/conferencing") ? "bg-[#E5E7EB]" : ""}`}>
+    className={`font-[500] leading-5 flex px-[11px] text-[0.875rem] pt-[4px] justify-start h-[32px] w-[158px] mx-auto  hover:bg-lightgrayBg rounded-md my-1 ${(router.pathname==="/settings/my-profile/conferencing") ? "bg-[#E5E7EB]" : ""}`}>
       Conferencing
     </button>
 
@@ -78,7 +78,7 @@ const Profilesider = () => {
      onClick={() => {
       router.push("/settings/my-profile/appearance")
     }}
-    className={`font-[500] flex px-[11px] text-[0.875rem] pt-[4px] justify-start h-[32px] w-[158px] mx-auto  hover:bg-lightgrayBg rounded-md my-1 ${(router.pathname==="/settings/my-profile/appearance") ? "bg-[#E5E7EB]" : ""}`}>
+    className={`font-[500] leading-5 flex px-[11px] text-[0.875rem] pt-[4px] justify-start h-[32px] w-[158px] mx-auto  hover:bg-lightgrayBg rounded-md my-1 ${(router.pathname==="/settings/my-profile/appearance") ? "bg-[#E5E7EB]" : ""}`}>
       Appearence
     </button>
 
@@ -90,19 +90,19 @@ const Profilesider = () => {
       fontSize={15}
      />
      <span
-     className=" my-auto mx-[10px] text-[#374151] text-[0.875rem]"
+     className=" my-auto leading-5 mx-[10px] text-[#374151] text-[0.875rem]"
      >Security</span>
     </div>
 
-    <button className={`font-[500] flex px-[11px] text-[0.875rem] pt-[4px] justify-start h-[32px] w-[158px] mx-auto  hover:bg-lightgrayBg rounded-md my-1 ${(router.pathname==="/settings/my-profile/password") ? "bg-[#E5E7EB]" : ""}`}>
+    <button className={`font-[500] leading-5 flex px-[11px] text-[0.875rem] pt-[4px] justify-start h-[32px] w-[158px] mx-auto  hover:bg-lightgrayBg rounded-md my-1 ${(router.pathname==="/settings/my-profile/password") ? "bg-[#E5E7EB]" : ""}`}>
       Password
     </button>
 
-    <button className="font-[500] flex px-[11px] text-[0.875rem] pt-[4px] justify-start h-[32px] w-[158px] mx-auto focus:bg-[#E5E7EB] hover:bg-lightgrayBg rounded-md my-1">
+    <button className="font-[500] leading-5 flex px-[11px] text-[0.875rem] pt-[4px] justify-start h-[32px] w-[158px] mx-auto focus:bg-[#E5E7EB] hover:bg-lightgrayBg rounded-md my-1">
       Two factor Auth
     </button>
 
-    <button className="font-[500] flex px-[11px] text-[0.875rem] pt-[4px] justify-start h-[32px] w-[158px] mx-auto focus:bg-[#E5E7EB] hover:bg-lightgrayBg rounded-md my-1">
+    <button className="font-[500] leading-5 flex px-[11px] text-[0.875rem] pt-[4px] justify-start h-[32px] w-[158px] mx-auto focus:bg-[#E5E7EB] hover:bg-lightgrayBg rounded-md my-1">
       Impersonification
     </button>
 
@@ -115,11 +115,11 @@ const Profilesider = () => {
       fontSize={15}
      />
      <span
-     className="my-auto mx-[10px] text-[#374151] text-[0.875rem]"
+     className="my-auto mx-[10px] leading-5 text-[#374151] text-[0.875rem]"
      >Billing</span>
     </div>
 
-    <button className="font-[500] flex px-[11px] text-[0.875rem] pt-[4px] justify-start h-[32px] w-[158px] mx-auto focus:bg-[#E5E7EB] hover:bg-lightgrayBg rounded-md my-1">
+    <button className="font-[500] leading-5 flex px-[11px] text-[0.875rem] pt-[4px] justify-start h-[32px] w-[158px] mx-auto focus:bg-[#E5E7EB] hover:bg-lightgrayBg rounded-md my-1">
       Manage Billing
     </button>
 
@@ -131,15 +131,15 @@ const Profilesider = () => {
       fontSize={15}
      />
      <span
-     className="my-auto mx-[10px] text-[#374151] text-[0.875rem]"
+     className="my-auto mx-[10px] leading-5 text-[#374151] text-[0.875rem]"
      >Developer</span>
     </div>
 
-    <button className="font-[500] flex px-[11px] text-[0.875rem] pt-[4px] justify-start h-[32px] w-[158px] mx-auto focus:bg-[#E5E7EB] hover:bg-lightgrayBg rounded-md my-1">
+    <button className="font-[500] leading-5 flex px-[11px] text-[0.875rem] pt-[4px] justify-start h-[32px] w-[158px] mx-auto focus:bg-[#E5E7EB] hover:bg-lightgrayBg rounded-md my-1">
       Webhooks
     </button>
 
-    <button className="font-[500] flex px-[11px] text-[0.875rem] pt-[4px] justify-start h-[32px] w-[158px] mx-auto focus:bg-[#E5E7EB] hover:bg-lightgrayBg rounded-md my-1">
+    <button className="font-[500] leading-5 flex px-[11px] text-[0.875rem] pt-[4px] justify-start h-[32px] w-[158px] mx-auto focus:bg-[#E5E7EB] hover:bg-lightgrayBg rounded-md my-1">
       API Keys
     </button>
 
@@ -150,12 +150,12 @@ const Profilesider = () => {
       fontSize={15}
      />
      <span
-     className="my-auto mx-[10px] text-[#374151] text-[0.875rem]"
+     className="my-auto mx-[10px] leading-5 text-[#374151] text-[0.875rem]"
      >Teams</span>
     </div>
 
 
-    <button className="w-full mb-[26px] h-[32px] flex mt-[17px] pt-[4px] px-[24px] my-auto text-[0.875rem] hover:bg-[#EAEAEA]">
+    <button className="w-full mb-[26px]  h-[32px] flex mt-[17px] pt-[4px] px-[24px] my-auto text-[0.875rem] hover:bg-[#EAEAEA]">
     <BiLeftArrowAlt
       fontSize={20}
     />

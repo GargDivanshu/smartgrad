@@ -14,6 +14,12 @@
   }
 }
 
+@layer base {
+  ul, ol {
+    list-style: revert;
+  }
+}
+
 
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Inter&display=swap');
 
@@ -169,12 +175,23 @@ a {
 }
 
 input:checked + .slider {
-  background-color: #2196F3;
+  background-color: #E5E7EB;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
+  box-shadow: 0 0 1px #E5E7EB;
 }
+
+/* input:checked + .sliderTag {
+  background-color: #E5E7EB;
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+input:not(:checked) + .sliderTag {
+  visibility: hidden;
+} */
 
 input:checked + .slider:before {
   -webkit-transform: translateX(11px);

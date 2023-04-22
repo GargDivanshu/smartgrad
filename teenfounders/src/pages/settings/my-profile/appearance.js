@@ -2,6 +2,7 @@ import React from 'react'
 import Sider from './../../../components/Sider';
 import Profilesider from './../../../components/Profilesider';
 import Button from './../../../components/common/Button';
+import Toggle from './../../../components/common/Toggle';
 import Input from './../../../components/common/Input';
 import {AiOutlineDelete} from 'react-icons/ai'
 import {SlOptions} from 'react-icons/sl'
@@ -19,7 +20,7 @@ const Appearence = () => {
     <Profilesider/>
 
     <div
-    className="w-full max-w-[995px] mx-auto lg:pl-[227px] px-[135px] pt-[100px] pb-[32px]"
+    className="w-full max-w-[995px] mx-auto lg:pl-[227px] px-[135px] pt-[80px] pb-[32px]"
     >
      <h1
      className="w-full justify-start text-[1.25rem] text-darkblue font-bold"
@@ -61,7 +62,6 @@ const Appearence = () => {
       <div>
          <button 
          className="h-[121px] w-[223px] rounded-md bg-contain bg-[url('https://app.cal.com/theme-light.svg')]"
-        
          >
          </button>
 <h1 className="text-center text-[14px]">
@@ -163,10 +163,7 @@ Light
         </div>
 
 
-        <label className="switch hover:cursor-not-allowed" disabled>
-  <input type="checkbox hover:cursor-not-allowed" disabled/>
-  <span className="slider round hover:cursor-not-allowed" disabled></span>
-</label>
+        <Toggle disable={true}/>
 
 
       </div>

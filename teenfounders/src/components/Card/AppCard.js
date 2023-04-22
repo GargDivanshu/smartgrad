@@ -44,7 +44,9 @@ const AppCard = ({logo, name, text, width, height, padding}) => {
         </h1>
 
         <div className="flex">
-           <TextBtn/>
+           <TextBtn
+           text={"Details"}
+           />
 
            <InstallBtn/>
         </div>

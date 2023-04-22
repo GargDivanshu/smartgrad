@@ -4,7 +4,7 @@ import Profilesider from './../../../components/Profilesider';
 import Button from './../../../components/common/Button';
 import Input from './../../../components/common/Input';
 import {BsCalendarMinus} from 'react-icons/bs'
-
+import { AiOutlinePlus } from 'react-icons/ai';
 
 
 const Calendars = () => {
@@ -14,10 +14,10 @@ const Calendars = () => {
     <Profilesider/>
 
     <div
-    className="w-full max-w-[995px] mx-auto lg:pl-[227px] px-[135px] pt-[80px] pb-[32px]"
+    className="w-full max-w-[995px] mx-auto lg:pl-[227px] pl-[135px] pt-[80px] pb-[32px]"
     >
 
-<div className="flex justify-between border-b-[1px] border-lightgray">
+<div className="flex justify-between border-b-[1px] border-lightgray w-full">
     <div className="">
      <h1
      className="w-full justify-start text-[1.25rem] text-darkblue font-bold"
@@ -29,8 +29,11 @@ const Calendars = () => {
      </h1>
 </div>
 
-<button className="w-[143px] h-[34px] rounded-md border-[1px] border-lightgray mt-1 hover:border-btntextgray">
-+ Add Calendar
+<button className="w-[143px] h-[34px] flex justify-evenly rounded-md text-[0.875rem] border-[1px] border-lightgray mt-1 hover:border-btntextgray">
+<AiOutlinePlus 
+fontSize={20} className="my-auto"
+/>
+ <span className="my-auto">Add Calendar</span>
 </button>
 </div>
 

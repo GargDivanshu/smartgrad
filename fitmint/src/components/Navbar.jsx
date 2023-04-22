@@ -1,4 +1,6 @@
 import React from 'react'
+import Link from 'next/link'
+
 
 const Navbar = () => {
   return (
@@ -12,9 +14,11 @@ const Navbar = () => {
        </div>
 
 
-       <div className="absolute hover:text-black text-[#646059] bottom-0 right-0 hover:bottom-1 duration-100 ease-out">
+       <Link href="/origin-pass">
+       <div className="absolute cursor-pointer hover:text-black text-[#646059] bottom-0 right-0 hover:bottom-1 duration-100 ease-in ">
        origin pass
        </div>
+       </Link>
     </div>
     </div>
   )

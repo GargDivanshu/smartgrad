@@ -9,7 +9,7 @@ const TextBtn = ({text, link}) => {
   return (
     <button
     onClick={() => (router.push(`${link}`))}
-    className="min-w-[82px] text-center hover:bg-searchBargrey hover:border-darkgray min-h-[34px] my-auto rounded-md border-[1px] border-gray"
+    className="min-w-[82px] text-center text-[0.875rem] font-[500] hover:bg-searchBargrey hover:border-darkgray min-h-[34px] my-auto rounded-md border-[1px] border-gray"
     >
      {text}
     </button>

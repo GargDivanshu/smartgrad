@@ -33,7 +33,7 @@ const General = () => {
     <Profilesider/>
 
     <div
-    className="w-full mx-auto max-w-[995px] lg:pl-[227px] px-[135px] pt-[100px] pb-[32px]"
+    className="w-full mx-auto max-w-[995px] lg:pl-[227px] px-[135px] pt-[80px] pb-[32px]"
     >
      <h1
      className="w-full justify-start text-[1.25rem] text-darkblue font-bold"
@@ -64,7 +64,7 @@ const General = () => {
       text="Time format"
       options={["12 hour", "24 hour"]}
      />
-     <h2> 
+     <h2 className="text-[0.875rem]"> 
      This is an internal setting and will not affect how times are displayed on public booking pages for you or anyone booking you.
      </h2>
    

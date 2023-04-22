@@ -34,10 +34,10 @@ const Mainscreen = () => {
         <div className="flex justify-between">
             <div className="flex flex-col">
               <h1
-              className="text-[20px] font-bold text-darkblue"
+              className="text-[1.25rem] font-bold text-darkblue"
               >App Store</h1>
               <h1
-              className="text-btntextgray text-[15px]"
+              className="text-btntextgray text-[0.875rem]"
               >Connecting people, technology and the workplace.</h1>
             </div>
 
